@@ -1,0 +1,146 @@
+/* Reset css */
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+*, div {
+    margin: 0;
+    padding: 0;
+    /* font: inherit; */
+}
+
+html { 
+    color-scheme: dark light;
+}
+
+img, picture, svg, video {
+    display: block;
+    max-width: 100%;
+}
+
+/* Reset Ending*/
+
+:root {
+  /* ### Primary */
+--grayish-blue: hsl(237, 18%, 59%);
+--soft-red: hsl(345, 95%, 68%);
+
+/* ### Neutral */
+--White: hsl(0, 0%, 100%);
+--Dark-desaturated-blue: hsl(236, 21%, 26%);
+--Very-dark-blue: hsl(235, 16%, 14%);
+--Very-dark: black;
+--blue: hsl(234, 17%, 12%);  
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'League Spartan', sans-serif;
+    font-weight: 700;
+    background-color: var(--blue);
+    background-image: url(/images/bg-stars.svg), url(/images/pattern-hills.svg);
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    background-size: contain;
+}
+
+.countdown-backgroud h4 {
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 100px;
+    margin-top: 70px;
+    letter-spacing: 3px;
+    word-spacing: 2px;
+    font-size: 17px;
+    font-weight: bolder;
+    color: var(--White);
+}
+
+.days-hours-minutes-seconds-container {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+.countdown {
+    font-size: 100px;
+    background-color: var(--Dark-desaturated-blue);
+    padding-left: 25px;
+    padding-right: 25px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    margin-bottom: 15px;
+    position: relative;
+    border-radius: 5px;
+}
+
+/* .countdown::before {
+    position: absolute;
+    content: "";
+    width: 10px;
+    height: 10px;
+    background: var(--blue);
+    top:40%;
+    left: 0;
+    border-radius: 0 50% 50% 0;
+}
+
+.countdown::after {
+    position: absolute;
+    content: "";
+    width: 10px;
+    height: 10px;
+    background: var(--blue);
+    top:40%;
+    right: 0;
+    border-radius: 50% 0 0 50%;
+} */
+
+
+.countdown-and-countdown-title-container {
+    display: flex;
+    flex-direction: column;
+    color: var(--soft-red);
+    
+}
+
+
+.countdown-title{
+    margin: 0px auto;
+    text-transform: uppercase;
+    font-size: 12px;
+    letter-spacing: 3px;
+    font-weight: bolder;
+    color: var(--grayish-blue);
+}
+
+.social-media-icons-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 200px;
+    gap: 20px;
+    
+}
+
+.social-media-icons-container ion-icon{
+    font-size: 30px;
+    color: var(--grayish-blue);
+}
+
+.social-media-icons-container ion-icon:hover {
+    color: var(--soft-red);
+  }
+
+
+
+  @media only screen and (max-width: 375px) {
+     .countdown-backgroud {
+        width: 300px;
+        border: 10px solid red;
+        z-index: 10;
+     }
+  }
