@@ -38,12 +38,11 @@ const countDown = function(){
         minutes.textContent === "00" &&
         seconds.textContent === "00"
     ) {
-        stopSetInterval();
+        const stopSetInterval = function(){
+    clearInterval(myInterval);
+}
     }
 }
 
 const myInterval = setInterval(countDown, 1000)
 
-const stopSetInterval = function(){
-    clearInterval(myInterval);
-}
