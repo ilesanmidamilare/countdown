@@ -6,7 +6,7 @@ const seconds = document.querySelector("[data-seconds]")
 
 const countDown = function(){
     const now = new Date().getTime();
-    const future = new Date("April 26 2023 15:32:00").getTime();
+    const future = new Date("April 26 2025 15:32:00").getTime();
     const diff = future - now;
 
     const s = 1000;
